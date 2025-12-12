@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js Homework Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js core -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+
+  <!-- Non-default theme (solarized) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/solarized.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide 1 (Horizontal) -->
+    <section data-markdown>
+      <textarea data-template>
+# Reveal.js Presentation
+**Homework Assignment**
+
+- Markdown slides
+- Non-default theme
+- Vertical + Horizontal navigation
+      </textarea>
+    </section>
+
+    <!-- Slide 2-4 (Vertical stack) -->
+    <section>
+      <section data-markdown>
+        <textarea data-template>
+## Vertical Slide 1
+
+This is the first slide in a vertical group.
+        </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+## Vertical Slide 2 (Image)
+
+![Reveal.js Logo](https://revealjs.com/images/logo/reveal-black-text.svg)
+        </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+## Vertical Slide 3
+
+- Nested slides
+- Up/Down navigation
+- Organized sections
+        </textarea>
+      </section>
+    </section>
+
+    <!-- Slide 5 (Horizontal) -->
+    <section data-markdown>
+      <textarea data-template>
+## Sources
+
+- https://revealjs.com/?demo
+- https://revealjs.com/installation/#basic-setup
+- https://quarto.org/docs/presentations/revealjs/
+      </textarea>
+    </section>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+<script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown ]
+  });
+</script>
+
+</body>
+</html>
