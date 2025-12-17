@@ -1,0 +1,19 @@
+name: Jekyll Custom Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List repository files
+        run: ls -la
+
+      - name: Finish
+        run: echo "Custom Jekyll pipeline executed successfully"
